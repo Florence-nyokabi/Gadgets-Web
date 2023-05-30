@@ -44,7 +44,7 @@ body{
 }
 
 .header .logo{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
     color: var(--black);
 }
@@ -173,20 +173,128 @@ body{
     padding-bottom: 1rem;
     
 }
-.testimonials{
+.mobile-accessories-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20x 30px;
+    font-size: 200%;
+    font-weight: 800;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.icons{
+    /* border: solid silver; */
+    /* padding: 20px; */
+}
+.trusted{
+    background-image: url(https://wehco.media.clients.ellingtoncms.com/imports/adg/photos/203838922_web-AdobeStock_502036204_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 180vh;
     margin-top: 30%;
+    margin-left: 3%;
+}
+.trusted h1{
+    padding: 12px 20px;
+    font-weight: 900;
+    font-size: 500%;
+    margin-left: -15;
+}
+.trusted p{
+    /* padding: 20px 60px; */
+    font-size: 190%;
+    font-weight: 600;
+    /* margin-left: -15; */
+}
+.gadgets{
+    margin-left: 2%;
+    padding-top: 100px;
+}
+.disc{
+    font-size: large;
+    color: rgb(29, 27, 27);
+    margin-left: 2%;
+}
+.buttons{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: 700;
+}
+.order{
+border: none;
+border-radius: 5px;
+padding: 15px 35px;
+background-color: yellow;
+font-size: medium;
+}
+.explore{
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 15px 35px;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bolder;
+}
+.section-gadgets{
+    background-color: #d0bfff;
+}
+.pro-gadgets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.pro-gadgets1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.pro-gadgets1 h1{
+    font-weight: 900;
+    font-size: 300%;
+}
+.pro-gadgets1 p{
+    font-weight: 200;
+    font-size: 100%;
+}
+.pro-gadgets img{
+    width: 70%
+}
+.button-image{
+    width: 30%;
+}
+.testimonials{
+    margin-top: 2%;
     margin-bottom: -25%;
 }
+.testimonials img{
+    width: 150%;
+    margin-left: 10%;
+}
+.testimonials i{
+    font-size: 300%;
+    color: yellow;
+    margin-left:  20%;
 
+}
 .testimonial-headings {
-    margin-left: 40%;
+    margin-left: 30%;
     font-weight: 900;
     font-size: 200%;
+    margin-bottom: 2%;
 }
-.testimonial-headings p{
-    margin-left: -25%;
-    font-weight: 700;
-    font-size: 400%;
+.testimonial-headings h1{
+    margin-left: 16%;
+    font-weight: 800;
+    font-size: 200%;
+}
+.testimonial-headings p1{
+    margin-right: 7%;
+    font-weight: 600;
+    font-size: 100%;
 }
 .testimonials .testimonial-content{
     display: flex;
@@ -194,6 +302,10 @@ body{
     margin-left: 10%;
     font-weight: 700;
     font-size: 180%;
+}
+.testimonial-content h3{
+    font-weight: 800;
+    font-size: 200%;
 }
 .section-cameras{
     background-image: url(images/Screenshot\ from\ 2023-05-29\ 22-06-46.png);
@@ -205,7 +317,7 @@ body{
     color: black;
     margin-top: 30%;
     margin-bottom: -15%;
-    background-color: #e9ecef;
+    background-color: #ced4da;
     padding: 80px 60px;
     font-weight: 700;
     font-size: 180%;
@@ -228,4 +340,15 @@ footer{
     color: white;
     font-weight: 700;
     font-size: 150%;
+}
+#deals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+.products{
+    border: solid gray;
+    border-radius: 7px;
+    margin-bottom: 2%;
+    text-align: center;
 }
