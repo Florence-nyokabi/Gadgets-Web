@@ -2,13 +2,13 @@ function fetchProducts() {
     fetch("https://dummyjson.com/products")
       .then((response) => response.json())
       .then((data) => {
-        const returnedData = data.products.slice(0, 30);
-        generateProductCards(returnedData);
+        const returnResult = data.products.slice(0, 30);
+        displayProducts(returnResult);
     });
 }
 fetchProducts()
-function generateProductCards(data) {
-    const productContainer = document.getElementById("deals");
+function displayProducts(data) {
+    const container = document.getElementById("deals");
     data.forEach((product) => {
       const card = document.createElement("div");
       card.classList.add("product-card");
@@ -17,9 +17,9 @@ function generateProductCards(data) {
               <h2>${product.title}</h2>
               <div class='productPrice'>
               <p>${product.price}</p>
-              <button>ADD TO CART</button>
+              <button>Add to cart</button>
               </div>
           `;
-      productContainer.appendChild(card);
+      container.appendChild(card);
     });
 }
