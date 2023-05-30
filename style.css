@@ -193,7 +193,7 @@ body{
     background-size: cover;
     height: 100vh;
     width: 180vh;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 3%;
 }
 .trusted h1{
@@ -347,7 +347,7 @@ footer{
     justify-content: space-evenly; 
 }
 .products{
-    border: solid gray;
+    /* border: solid gray; */
     border-radius: 7px;
     margin-bottom: 2%;
     text-align: center;
