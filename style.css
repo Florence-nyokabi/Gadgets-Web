@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root{
+    --orange: rgb(255, 255, 0);
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+ 
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: rgb(34, 34, 34);
+    box-shadow: var(---box-shadow);
+    color: white;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--orange);
+}
+.header .logo{
+    color: white;
+}
+.get{
+    color: var(--orange);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: white;
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+.header .icons i{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    /* background: #eee; */
+    color: white;
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .header .icons i:hover{
+    background: var(--orange);
+    color: #fff;
+} */
+.header .icons button{
+    background-color: var(--orange);
+    padding: 10px 12px;
+}
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: -110rem;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(---box-shadow);
+}
+
+.header .search-form .active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:0 1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color:var(--orange);
+}
+.header .shopping-cart{
+    position:absolute;
+    top: 110%; right: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(---box-shadow);
+    width: 30rem;
+    background: #fff;
+}
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+.header .shopping-cart .box img{
+    height: 10rem;
+}
+.header .shopping-cart .box i{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%; right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+.header .shopping-cart .box i:hover{
+    color: var(--orange);
+}
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+
+}
+.header .shopping-cart .box .content span{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    
+}
+.testimonials{
+    margin-top: 30%;
+    margin-bottom: -25%;
+}
+
+.testimonial-headings {
+    margin-left: 40%;
+    font-weight: 900;
+    font-size: 200%;
+}
+.testimonial-headings p{
+    margin-left: -25%;
+    font-weight: 700;
+    font-size: 400%;
+}
+.testimonials .testimonial-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    font-weight: 700;
+    font-size: 180%;
+}
+.section-cameras{
+    background-image: url(images/Screenshot\ from\ 2023-05-29\ 22-06-46.png);
+}
+.subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    margin-top: 30%;
+    margin-bottom: -15%;
+    background-color: #e9ecef;
+    padding: 80px 60px;
+    font-weight: 700;
+    font-size: 180%;
+}
+.subscribe input{
+    background-color: var(--orange);
+    padding: 2px 12px;
+}
+.subscribe i{
+    font-weight: 800;
+    font-size: 200%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    background-color: #343a40;
+    padding: 60px 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 150%;
+}
